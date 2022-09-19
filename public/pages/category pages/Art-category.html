@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kautukum-Art</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <!--SLICK LIBRARY-CAROUSEL-->
+  <link rel="stylesheet" type="text/css" href="../../assets/slick/slick.css" charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../assets/slick/slick-theme.css" charset="UTF-8" />
+  <!--LOCAL STYLESHEET-->
+  <link rel="stylesheet" href="../../stylesheets/index.css" />
+
+  <link rel="stylesheet" href="../../stylesheets/Category.css" />
+</head>
+
+<body>
+  <!-- ===================== Navigation bar =========================-->
+  
+  <div class="main-nav">
+  <nav class="navbar navbar-expand-md container">
+    <a class="navbar-brand logo mr-auto" href="../../index.html"><img src="../../assets/images/kautukum-logo.png" alt=""
+        class="img-fluid" /></a>
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="../../index.html" id="home-link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../About-us.html">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Help-and-support.html">HELP AND SUPPORT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../blogs/Blog_Landing.html">BLOG</a>
+        </li>
+        <!--<li class="nav-item">
+            <a class="nav-link" href="../Login.html">LOGIN / SIGN UP</a>
+          </li>-->
+      </ul>
+    </div>
+  </nav>
+</div>
+  <!-- ==================== Navigation bar end ======================== -->
+
+  <!-- ======================= Title - section=============================== -->
+  <div id="about-us-title-section" class="container-fluid">
+    <!-- <div class="container">
+      <h1>BLOGS</h1>
+      <p>
+        When it comes to pursuing your interest and hobbies, we got your back
+        and we will make sure to leave no stone unturned.
+      </p>
+      <p>
+        Learn from the best in the field an get better at what you've always
+        loved to do.
+      </p>
+    </div> -->
+    <div class="heading">
+      <h2>ART</h2>
+    </div>
+    <!-- <div class="right">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-linkedin-in"></i>
+    </div> -->
+
+
+  </div>
+  <!-- ==================== Title-section end ==============================-->
+  <div class="back-container">
+    <!-- <div class="course-container container"> -->
+
+    <!--======================================Carousel Start================================================-->
+  <div class="carousel container">
+    <!--Member 1-->
+    <div onclick="myFunctionMember1()">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" id="liza" src="../../assets/mentor Images/lizza sharma.jpg" />
+        </div>
+        <div class="team-content">
+          <p class="name">Lizza Sharma</p>
+          <p class="title">Sketching</p>
+        </div>
+        <ul class="social">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100009821386154" class="fab fa-facebook-f"
+              aria-hidden="true"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/invites/contact/?i=qc5dz9tg795g&amp;utm_content=5cvfz1f"
+              class="fab fa-instagram" aria-hidden="true"></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/lizza-sharma-8455471a1" class="fab fa-linkedin-in"
+              aria-hidden="true"></a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <!--Member 2-->
+    <div onclick="myFunctionMember2()">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="../../assets/mentor Images/aditi aggarwal_small.jpg" />
+        </div>
+        <div class="team-content">
+          <p class="title">Graphic Designer</p>
+          <p class="name">Aditi Aggarwal</p>
+        </div>
+        <ul class="social">
+          <li>
+            <a href="https://www.facebook.com/andekhe.aakar" class="fab fa-facebook-f" aria-hidden="true"></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/adtaggarwal?utm_medium=copy_link" class="fab fa-instagram"
+              aria-hidden="true"></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/adtartt?s=09" class="fab fa-twitter" aria-hidden="true"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--Member 3-->
+    <div onclick="myFunctionMember3()">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" id="quincy" src="../../assets/mentor Images/quincy singh_small.png" />
+        </div>
+        <div class="team-content">
+          <p class="name">Quincy Sharma</p>
+          <p class="title">Calligraphy Expert</p>
+        </div>
+        <ul class="social">
+          <li>
+            <a href="https://twitter.com/singh_quincy?s=08" class="fab fa-twitter" aria-hidden="true"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_.quincyyy._?r=nametag" class="fab fa-instagram" aria-hidden="true"></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/quincy-singh-6320a0203" class="fab fa-linkedin-in"
+              aria-hidden="true"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--Member 4-->
+    <div onclick="myFunctionMember4()">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" id="anjali" src="../../assets/mentor Images/anjali.jpg" />
+        </div>
+        <div class="team-content">
+          <p class="name">Anjali Rana</p>
+          <p class="title">Acrylics</p>
+        </div>
+        <ul class="social">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100048545227267" class="fab fa-facebook-f"
+              aria-hidden="true"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/anjali_rana_04" class="fab fa-instagram" aria-hidden="true"></a>
+          </li>
+          <li>
+            <a href="http://linkedin.com/in/anjali-rana-ab94a91a6" class="fab fa-linkedin-in" aria-hidden="true"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
+  <!--======================================Carousel End======================================================-->
+  <div class="name-header">
+    <h1 class="name-h1">Sketching</h1>
+  </div>
+
+    <!--===============================Video section start=============================================-->
+
+    <!-- <div class="video_section">
+      <div class="vid">
+        <video controls="controls" class="video-stream" x-webkit-airplay="allow" data-youtube-id="N9oxmRT2YWw"
+          src="https://www.youtube.com/embed/yH88qRmgkGI">
+        </video>
+      </div>
+    </div> -->
+
+    <!--===============================Video section end=============================================-->
+
+  <div class="course-container container">
+    <div class="video_section">
+      <div class="vid">
+        <video controls="controls" class="video-stream" x-webkit-airplay="allow" data-youtube-id="N9oxmRT2YWw"
+          src="https://www.youtube.com/embed/yH88qRmgkGI">
+        </video>
+      </div>
+    </div>
+    <div class="container my-5" id="member-static">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="item-1 card">
+            <img src="../../assets/mentor Images/lizza sharma.jpg" />
+          </div>
+          <div class="item-2 card">
+            <!-- <h4>Lizza Sharma (Sketching)</h4> -->
+            <ul>
+              <li><b>LIZZA SHARMA</b></li>
+              <li>Introducing to you, Lizza Sharma a gifted artist with a beautiful hand in sketching.</li>
+              <li>She has been qualified for United Institute of Design and has been facilitated for scoring a perfect
+                100 in commercial arts from CBSE</li>
+              <li>
+                She has a keen interest in portrait sketching with charcoal and has a knowledge of scientific and
+                artistic aspect of sketching.
+              </li>
+              <li>She is an artist who sees project through conception to completion.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="item-3 card">
+            <div id="title-section">
+              <div class="left_type container">
+                <div class="crs_text">Course text here</div>
+                <div class="crs_cont">
+                  <div class="crs_type crs_type_active" onclick="btn1()">Basic</div>
+                  <div class="crs_type" onclick="btn2()">Intermediate</div>
+                <div class="crs_type" onclick="btn3()">Advanced</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== Course-container-for-carousel-cards ==============================-->
+  <div class="course-container container" id="member-1">
+    <div class="video_section">
+      <div class="vid">
+        <video controls="controls" class="video-stream" x-webkit-airplay="allow" data-youtube-id="N9oxmRT2YWw"
+          src="https://www.youtube.com/embed/yH88qRmgkGI">
+        </video>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="item-1 card">
+            <img src="../../assets/mentor Images/lizza sharma.jpg" />
+          </div>
+          <div class="item-2 card">
+            <!-- <h4>Lizza Sharma (Sketching)</h4> -->
+            <ul>
+              <li><b>LIZZA SHARMA</b></li>
+              <li>Introducing to you, Lizza Sharma a gifted artist with a beautiful hand in sketching.</li>
+              <li>She has been qualified for United Institute of Design and has been facilitated for scoring a perfect
+                100 in commercial arts from CBSE</li>
+              <li>
+                She has a keen interest in portrait sketching with charcoal and has a knowledge of scientific and
+                artistic aspect of sketching.
+              </li>
+              <li>She is an artist who sees project through conception to completion.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="item-3 card">
+            <div id="title-section">
+              <div class="left_type container">
+                <div class="crs_text">Course text here</div>
+                <div class="crs_cont">
+                  <div class="crs_type crs_type_active" onclick="btn1()">Basic</div>
+                  <div class="crs_type" id="i-btn1"  onclick="btn2()">Intermediate</div>
+                <div class="crs_type" id="a-btn1" onclick="btn3()">Advanced</div>
+                </div>
+              </div>
+            </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="course-container container" id="member-2">
+    <div class="video_section">
+      <div class="vid">
+        <video controls="controls" class="video-stream" x-webkit-airplay="allow" data-youtube-id="N9oxmRT2YWw"
+          src="https://www.youtube.com/watch?v=Ztz-YDK561o">
+        </video>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="item-1 card">
+            <img src="../../assets/mentor Images/aditi aggarwal.jpg" />
+          </div>
+          <div class="item-2 card">
+            <h5><b>Aditi Aggarwal</b></h5>
+            <ul>
+              <li>I'm Aditi Aggarwal, currently working as a freelance graphic designer, beyond graphic designing I have
+                a keen interest in visual arts, also a skilled artist which leads me to visualise artistic things in a
+                creative manner and being familiar with esthetic design concept and layout principle.</li>
+              <li>
+                Software known: Adobe Photoshop, Illustrator, Indesign, Canva and Adobe Animate
+              </li>
+              <li>Education
+                Master of multimedia - Delhi Institute of Computer Science
+                BCA - Maharaja Surajmal Institute
+              </li>
+              <li>
+                Knows all sorts of advanced and intricate music styles as
+                well.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="item-3 card">
+            <div id="title-section">
+              <div class="left_type container">
+                <div class="crs_text">Drummer</div>
+                <div class="crs_cont">
+                  <div class="crs_type crs_type_active" onclick="graphicBtn1()">Basic</div>
+                  <div class="crs_type" id="i-btn1"  onclick="graphicBtn2()">Intermediate</div>
+                <div class="crs_type" id="a-btn1" onclick="graphicBtn3()">Advanced</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="course-container container" id="member-3">
+    <div class="video_section">
+      <div class="vid">
+        <video controls="controls" class="video-stream" x-webkit-airplay="allow" data-youtube-id="N9oxmRT2YWw"
+          src="https://www.youtube.com/watch?v=iqvAsVLkMGw">
+        </video>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="item-1 card">
+            <img src="../../assets/mentor Images/quincy singh.png" />
+          </div>
+          <div class="item-2 card">
+            <!-- <h4>Quincy Singh (Calligraphy Expert)</h4> -->
+            <ul>
+              <li><b>Quincy Singh</b></li>
+              <li>
+                Introducing to you, Quincy Singh , ingenious in doing calligraphy and lettering .she's born with an
+                amazing handwriting.
+              </li>
+              <li>. She has an art of performing calligraphy with mandala art.she gives form to signs in an expressive,
+                harmonious and skillful manner</li>
+              <li>
+                .She is an artist always ready to implement the new ideas on paper, giving the calligraphy touch.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="item-3 card">
+            <div id="title-section">
+              <div class="left_type container">
+                <div class="crs_text">Keyboardist</div>
+                <div class="crs_cont">
+                  <div class="crs_type crs_type_active" onclick="keyboardBtn()">Basic</div>
+                </div>
+              </div>
+            </div>
+            <p>Categories</p>
+            <ul>
+              <li>The drop shadows</li>
+              <li>The floating drop shadows</li>
+              <li>Traditional drop shadows</li>
+              <li>Hollow drop shadow</li>
+              <li>Block lettering</li>
+              <li>Diagonal block lettering</li>
+              <li>Black outline around</li>
+              <li>3D traditional drop</li>
+              <li>Advance floating</li>
+              <li>Connect To one</li>
+            </ul>
+            <p>Bullet journal setup</p>
+            <p>Different types</p>
+            <p>Calligraphy with title</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="course-container container" id="member-4">
+    <div class="video_section">
+      <div class="vid">
+        <video controls="controls" class="video-stream" x-webkit-airplay="allow" data-youtube-id="N9oxmRT2YWw"
+          src="https://www.youtube.com/watch?v=8ctkIVivfrI">
+        </video>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="item-1 card">
+            <img src="../../assets/mentor Images/anjali.jpg" />
+          </div>
+          <div class="item-2 card">
+            <!-- <h4>Anjali Rana (Acrylics)</h4> -->
+            <ul>
+              <li><b>Anjali Rana</b></li>
+              <li>Hey , I am Anjali who really love to explore more and more colours </li>
+              <li>The best way I could find to channelize my emotions and energy is my Art. </li>
+              <li>Pouring my joy and sorrow into one canvas is something that gave a meaning to what I do. </li>
+              <li>. I have been painting since I was a kid and development my passion from something I really enjoyed
+                unknowingly which has become a source of happiness for me now.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="item-3 card">
+            <div id="title-section">
+              <div class="left_type container">
+                <div class="crs_text">Keyboardist</div>
+                <div class="crs_cont">
+                  <div class="crs_type crs_type_active" onclick="guitaristBtn1()">Basic</div>
+                  <div class="crs_type" id="i-btn1"  onclick="guitaristBtn2()">Intermediate</div>
+                  <div class="crs_type" id="a-btn1" onclick="guitaristBtn3()">Advanced</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="course-details-container-toggle" class="container my-5">
+    <div class="container"></div>
+  </div>
+</div>
+<div id="myModal" class="modal">
+  <div class="modal-content" id="modal-content">
+    <span class="close">&times;</span>
+    </div> 
+  </div>
+</div>
+  
+  <!--=============================== Footer =============================================-->
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-menu col-4">
+          <a href="../About-us.html">About Us</a>
+          <a href="../Help-and-support.html">Contact US</a>
+        </div>
+        <div class="footer-logo col-10 col-md-4">
+          <div>
+            <img src="../../assets/images/k logo (2).png" id="logo-image" height="150" width="150" />
+          </div>
+          <!-- <div
+        class="footer-icons-main d-flex justify-content-between"
+        id="footer-icons"
+      >
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div> -->
+        </div>
+
+        <div class="footer-menu col-10 col-md-4">
+          <!-- <div> -->
+          <p>PHONE: +91 8384062608</p>
+          <p>EMAIL: support@kautukum.com</p>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--=============================Copyright-footer==========================-->
+  <div class="footer-copyright d-flex justify-content-center" id="copyright-foot">
+    <p>
+      <i class="far fa-copyright"></i> Copyright 2021 Kautukum.All Rights
+      Reserved
+    </p>
+  </div>
+
+  <!-- ================================= Footer end ===========================================-->
+<script>
+    // Get the modal
+    const modal = document.getElementById("myModal");
+    
+    const level1=`<div class="d-flex justify-content-between">
+              <div>
+                <p><b>Level 1:</b></p>
+                <ul class="small-font">
+                  <li class="levelList">Materials to get your hands on</li>
+                  <li class="levelList">Which sketchbook to buy</li>
+                  <li class="levelList">Basics of drawing skills</li>
+                  <li class="levelList">Gradients</li>
+                  <li class="levelList">Universal shapes</li>
+                  <li class="levelList">Shades and textures</li>
+                  <li class="levelList">Knowing the proportions</li>
+                  <li class="levelList">How to compose a drawing</li>
+                  <li class="levelList">Perspective drawings</li>
+                  <li class="levelList">Expressing the gestures</li>
+                  <li class="levelList">Contour drawing</li>
+                </ul>
+                <div class="crs_type crs_type_active" id="">Register</div>
+              </div>`;
+    const level2=`<div>
+                <p><b>Level 2:</b></p>
+                <ul class="small-font">
+                  <li class="levelList">Basics of shading</li>
+                  <li class="levelList">How to do still life drawings </li>
+                  <li class="levelList">Practicing on plastic material</li>
+                  <li class="levelList">Practicing on metal </li>
+                  <li class="levelList">Practicing on utensils</li>
+                  <li class="levelList">Practicing on wodden materials</li>
+                  <li class="levelList">Practicing on fruits</li>
+                  <li class="levelList">Practicing on plants</li>
+                  <li class="levelList">Practicing on grass</li>
+                  <li class="levelList">Expressing the drapery</li>
+                  <li class="levelList">Contour drawing</li>
+                </ul>
+                <div class="crs_type crs_type_active" id="">Register</div>
+              </div>`;
+    const level3=`<div class="d-flex justify-content-start">
+                    <div>
+                      <p><b>Level 3:</b></p>
+                      <ul class="small-font">
+                        <li class="levelList">How to draw face</li>
+                        <li class="levelList">How to draw eyes</li>
+                        <li class="levelList">How to draw nose</li>
+                        <li class="levelList">How to draw mouth</li>
+                        <li class="levelList">How to draw ears</li>
+                        <li class="levelList">Drawing your favorite fictional character</li>
+                        <li class="levelList">Drawing human portrait</li>
+                      </ul>
+                    <div class="crs_type crs_type_active" id="">Register</div>
+                  </div>`;
+    const graphicLevel1=`<div class="d-flex justify-content-between">
+                          <div>
+                            <p><b>Level 1:</b></p>
+                            <ul class="small-font">
+                              <li class="levelList">Introduction to photoshop</li>
+                              <li class="levelList">Rotate and Crop tool (selection tool)</li>
+                              <li class="levelList">photoshop theory </li>
+                              <li class="levelList">photo editing and retouching </li>
+                              <li class="levelList">working with blend mode and layer styles </li>
+                              <li class="levelList">MASKS and channels</li>
+                              <li class="levelList">Transform and Wraps</li>
+                              <li class="levelList">photo manipulation</li>
+                              <li class="levelList">Creating and Editing type</li>
+                              <li class="levelList">Effects</li>
+                            </ul>
+                            <div class="crs_type crs_type_active" id="">Register</div>
+                          </div>
+                        </div>`;
+    const graphicLevel2=`<div>
+                            <p><b>Level 2:</b></p>
+                            <ul class="small-font">
+                              <li class="levelList">Introduction to adobe illustrator</li>
+                              <li class="levelList">Typography and illustration</li>
+                              <li class="levelList">vector art and designing </li>
+                              <li class="levelList">Blend tool</li>
+                              <li class="levelList">charts and graphs </li>
+                              <li class="levelList">Symbols and patterns</li>
+                              <li class="levelList">theory related to designing/i></li>
+                            </ul>
+                            <div class="crs_type crs_type_active" id="">Register</div>
+                          </div>`;       
+    const graphicLevel3=`<div class="d-flex justify-content-start">
+                            <div>
+                              <p><b>Level 3:</b></p>
+                              <ul class="small-font">
+                                <li class="levelList">Quick start tour to adobe indesign</li>
+                                <li class="levelList">paragraph formatting and design</li>
+                                <li class="levelList">basics of typography </li>
+                                <li class="levelList">all tools of indesign </li>
+                                <li class="levelList">magazine design </li>
+                                <li class="levelList">tips and tricks for effective design</li>
+                                <li class="levelList">action and timeline in photoshop</li>
+                                <li class="levelList">advance photo editing and effects </li>
+                                <li class="levelList">effective illustrator tips </li>
+                                <li class="levelList">principle of designing</li>
+                              </ul>
+                              <div class="crs_type crs_type_active" id="">Register</div>
+                            </div>
+                          </div> `;     
+    const keyboardLevel=`<div>
+                          <p><b>Basic</b></p>
+                          <ul>
+                            <li class="levelList">Putting it all together</li>
+                            <li class="levelList">Different ways by same type</li>
+                            <li class="levelList">Material</li>
+                          </ul>
+                          <div class="crs_type crs_type_active" id="">Register</div>
+                        </div>`;  
+    const guitaristLevel1=`<div>
+                            <p><b>Level 1:</b></p>
+                            <ul class="small-font">
+                              <li class="levelList"> Choose appropriate materials, surfaces, and tools for acrylic painting</li>
+                              <li class="levelList">Mix and apply value of colour</li>
+                              <li class="levelList">Colour wheel explanation</li>
+                              <li class="levelList">Mix medium to change the behaviour of acrylic paint</li>
+                              <li class="levelList">Acrylic technique basic</li>
+                              <li class="levelList">Create abstract, basic shading and blending of two colours or more</li>
+                              <li class="levelList">Some very basic designs idea to make the painting better</li>
+                            </ul>
+                            <div class="crs_type crs_type_active" id="">Register</div>
+                          </div>`;               
+    const guitaristLevel2=`<div>
+                            <p><b>Level 2:</b></p>
+                            <ul class="small-font">
+                              <li class="levelList"> Origin of acrylic painting ( basic knowledge )</li>
+                              <li class="levelList"> Colour theory</li>
+                              <li class="levelList">Brush technique</li>
+                              <li class="levelList">Colour and lighting technique</li>
+                              <li class="levelList">How to add depth and aerial perspective</li>
+                              <li class="levelList">Do and don’t for acrylic painting</li>
+                              <li class="levelList">Complete painting </li>
+                            </ul>
+                            <div class="crs_type crs_type_active" id="">Register</div>
+                          </div>`; 
+    const guitaristLevel3=`<div>
+                            <p><b>Level 3:</b></p>
+                            <ul class="small-font">
+                              <li class="levelList">Proper knowledge of Acrylic painting origin.</li>
+                              <li class="levelList">Fine detail working on painting.</li>
+                              <li class="levelList">Advance techniques to beautify the paintings.</li>
+                              <li class="levelList">Complete scenery painting.</li>
+                              <li class="levelList">Still life acrylic painting</li>
+                            </ul>
+                            <div class="crs_type crs_type_active" id="">Register</div>
+                          </div>`;
+                                                                  
+    const span = document.getElementsByClassName("close")[0];
+    
+    const btn1=()=> {
+      modal.style.display = "block";
+      console.log("Modal Content => ", document.getElementById("modal-content"));
+      document.getElementById("modal-content").innerHTML = level1;
+    }
+    const btn2=()=>{
+      modal.style.display = "block";
+      console.log("Modal Content => ", document.getElementById("modal-content"));
+      document.getElementById("modal-content").innerHTML = level2;
+    }
+    const btn3=()=>{
+      modal.style.display = "block";
+      console.log("Modal Content => ", document.getElementById("modal-content"));
+      document.getElementById("modal-content").innerHTML = level3;
+    }
+    const graphicBtn1=()=>{
+      modal.style.display = "block";
+      console.log("Modal Content => ", document.getElementById("modal-content"));
+      document.getElementById("modal-content").innerHTML = graphicLevel1;
+    }
+    const graphicBtn2=()=>{
+      modal.style.display = "block";
+      console.log("Modal Content => ", document.getElementById("modal-content"));
+      document.getElementById("modal-content").innerHTML = graphicLevel2;
+    }
+    const graphicBtn3=()=>{
+      modal.style.display = "block";
+      console.log("Modal Content => ", document.getElementById("modal-content"));
+      document.getElementById("modal-content").innerHTML = graphicLevel3;
+    }
+    const keyboardBtn=()=>{
+      modal.style.display = "block";
+      console.log("Modal Content => ", document.getElementById("modal-content"));
+      document.getElementById("modal-content").innerHTML = keyboardLevel;
+    }
+    const guitaristBtn1=()=>{
+      modal.style.display = "block";
+      console.log("Modal Content => ", document.getElementById("modal-content"));
+      document.getElementById("modal-content").innerHTML = guitaristLevel1;
+    }
+    const guitaristBtn2=()=>{
+      modal.style.display = "block";
+      console.log("Modal Content => ", document.getElementById("modal-content"));
+      document.getElementById("modal-content").innerHTML = guitaristLevel2;
+    }
+    const guitaristBtn3=()=>{
+      modal.style.display = "block";
+      console.log("Modal Content => ", document.getElementById("modal-content"));
+      document.getElementById("modal-content").innerHTML = guitaristLevel3;
+    }
+    
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
+    integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../assets/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="../../JSfiles/category.js"></script>
+</body>
+
+</html>

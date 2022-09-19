@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Kautukum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <!--SLICK LIBRARY-CAROUSEL-->
+  <link rel="stylesheet" type="text/css" href="../assets/slick/slick.css" charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../assets/slick/slick-theme.css" charset="UTF-8" />
+  <link rel="stylesheet" href="../stylesheets/index.css" />
+</head>
+
+<body>
+  <!-- ===================== Navigation bar =========================-->
+  <div class="main-nav">
+    <nav class="navbar navbar-expand-md container">
+      <a class="navbar-brand logo mr-auto" href="../index.html"><img src="../assets/images/kautukum-logo.png" alt=""
+          class="img-fluid" /></a>
+      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html" id="home-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./About-us.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Help-and-support.html">HELP AND SUPPORT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/blogs/Blog_Landing.html">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Signup.html">LOGIN / SIGN UP</a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link" href="Login.html">LOGIN / SIGN UP</a>
+          </li>-->
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- ==================== Navigation bar end ======================== -->
+  <!-- ======================= Title - section=============================== -->
+
+  <div id="about-us-title-section" class="container-fluid">
+    <div class="container">
+      <div class="title-content">
+        <h1>About us</h1>
+        <p>
+          When it comes to pursuing your interest and hobbies, we got your
+          back and we will make sure to leave no stone unturned.
+        </p>
+        <p>
+          Learn from the best in the field and get better at what you've
+          always loved to do.
+        </p>
+      </div>
+      <div class="title-image">
+        <img src="../assets/about us images/k logo (2).png" alt="" />
+      </div>
+      <!-- <div class="right">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-youtube"></i>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- ==================== Title-section end ==============================-->
+
+  <!-- ==================== Middle container =============================-->
+
+  <div class="about-us-content">
+    <div class="container card">
+      <div class="row" id="first-paragraph">
+        <!-- <div class="col-md-4 order-md-2">
+          <img src="../assets/about us images/grp.png" width="100%" />
+        </div> -->
+      </div>
+      <p>
+        Kautukum is an education based startup that aims to help its learners
+        discover and even pursue their hobbies and interests through a group
+        of highly talented mentors and guides.
+      </p>
+      <div class="slider" style="position: relative;">
+        <div class="myslides "><img src="../assets/about us images/about us slider image-01.png" alt=""
+            style="width: 100%;" /></div>
+        <div class="myslides "><img src="../assets/about us images/about us slider image-02.png" alt=""
+            style="width: 100%;" /></div>
+        <div class="myslides "><img src="../assets/about us images/about us slider image-03.png" alt=""
+            style="width: 100%;" /></div>
+
+        <div class="dot-con" style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <img class="team-grp" src="../assets/about us images/grp.png" alt="" />
+
+      <h1>THE TEAM</h1>
+      <p>
+        Our team consists of young, highly talented mentors who will help you
+        out throughout your module, duration for 24/7. They have designed
+        these modules such that by the end of any module you will be knowing
+        everything the mentor does.
+      </p>
+    </div>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("myslides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" act", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " act";
+      setTimeout(showSlides, 8000); // Change image every 4 seconds
+    }
+  </script>
+
+  <!-- ========================== Middle container end ========================= -->
+
+  <!--==============================MENTORS Caraousel Start===============================-->
+  <div class="con-carousal">
+    <div class="team-header">
+      <h3>MENTORS</h3>
+    </div>
+    <div class="carousel container">
+      <!--Member 1-->
+      <div>
+        <div class="our-team">
+          <div class="picture" style="margin-bottom: 35px">
+            <img class="img-fluid" src="../assets/about us images/our_team/nipun_jain.jpg" />
+          </div>
+          <div class="team-content">
+            <!--<p class="title">Mentor</p>-->
+            <p class="name">Nipun Jain</p>
+            <p class="title">IIM-C ALUMNUS</p>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-facebook-f" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-twitter" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-linkedin-in" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-google-plus-g" aria-hidden="true"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Member 2-->
+      <!--<div>
+        <div class="our-team">
+          <div class="picture" style="margin-bottom: 35px;">
+            <img
+              class="img-fluid"
+              src="../assets/about us images/our_team/neha_aggarwal.jpg"
+            />
+          </div>
+          <div class="team-content">
+            <p class="title">Mentor</p>
+            <p class="name">Neha Aggarwal–IIM-C ALUMNUS</p>
+            <p class="title">Associate At Bank Of America</p>
+          </div>
+          <ul class="social">
+            <li>
+              <a
+                href="https://codepen.io/collection/XdWJOQ/"
+                class="fab fa-facebook-f"
+                aria-hidden="true"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://codepen.io/collection/XdWJOQ/"
+                class="fab fa-twitter"
+                aria-hidden="true"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://codepen.io/collection/XdWJOQ/"
+                class="fab fa-linkedin-in"
+                aria-hidden="true"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://codepen.io/collection/XdWJOQ/"
+                class="fab fa-google-plus-g"
+                aria-hidden="true"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>-->
+      <!--Member 3-->
+      <div>
+        <div class="our-team">
+          <div class="picture" style="margin-bottom: 35px">
+            <img class="img-fluid" src="../assets/about us images/our_team/nitesh_sharma.jpg" />
+          </div>
+          <div class="team-content">
+            <!--<p class="title">Mentor</p>-->
+            <p class="name">Nitesh Sharma</p>
+            <p class="title">IIM-L ALUMNUS</p>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-facebook-f" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-twitter" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-linkedin-in" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-google-plus-g" aria-hidden="true"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Member 4-->
+      <!--<div>
+      <div class="our-team">
+        <div class="picture" style="margin-bottom: 35px;">
+          <img
+            class="img-fluid"
+            src="../assets/about us images/our_team/divya_bansal.jpg" style="height: 130px;"
+          />
+        </div>
+        <div class="team-content">
+          <p class="title">Mentor</p>
+          <p class="name">Divya Bansal </p>
+          <p class="title" style="margin-top: 28px;">Android Lead Developer at TD</p>
+        </div>
+        <ul class="social">
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/"
+              class="fab fa-facebook-f"
+              aria-hidden="true"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/"
+              class="fab fa-twitter"
+              aria-hidden="true"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/"
+              class="fab fa-linkedin-in"
+              aria-hidden="true"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/"
+              class="fab fa-google-plus-g"
+              aria-hidden="true"
+            ></a>
+          </li>
+        </ul>
+      </div>
+     </div>-->
+      <!--Member 5-->
+      <!-- <div>
+        <div class="our-team">
+          <div class="picture" style="margin-bottom: 35px">
+            <img class="img-fluid" src="../assets/about us images/our_team/nitin_jain.jpg" style="height: 130px" />
+          </div>
+          <div class="team-content">
+            <p class="name">Nitin Jain</p>
+            <p class="title">IIT-D ALUMNUS</p>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-facebook-f" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-twitter" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-linkedin-in" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-google-plus-g" aria-hidden="true"></a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+      <!--Member 6-->
+
+      <!--<div>
+      <div class="our-team">
+        <div class="picture">
+          <img
+            class="img-fluid"
+            src="../assets/about us images/our_team/akash_bansal.jpg" style="height: 130px;"
+          />
+        </div>
+        <div class="team-content">
+          <p class="name">Akash Bansal – IIT-D Alumnus</p>
+          <p class="title">CTO</p>
+        </div>
+        <ul class="social">
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/"
+              class="fab fa-facebook-f"
+              aria-hidden="true"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/"
+              class="fab fa-twitter"
+              aria-hidden="true"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/"
+              class="fab fa-linkedin-in"
+              aria-hidden="true"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://codepen.io/collection/XdWJOQ/"
+              class="fab fa-google-plus-g"
+              aria-hidden="true"
+            ></a>
+          </li>
+        </ul>
+      </div>
+      </div>-->
+    </div>
+
+    <!--===============================MENTORS Caraousel End=====================================-->
+
+    <div class="team-header" style="margin-top: 40px">
+      <h3>CORE TEAM</h3>
+    </div>
+
+    <!--==============================CORE TEAM Caraousel Start===============================-->
+    <div class="carousel core-team container">
+      <!--Member 6-->
+
+      <!--<div>
+            <div class="our-team">
+              <div class="picture">
+                <img
+                  class="img-fluid"
+                  src="../assets/about us images/our_team/akash_bansal.jpg" style="height: 130px;"
+                />
+              </div>
+              <div class="team-content">
+                <p class="name">Akash Bansal – IIT-D Alumnus</p>
+                <p class="title">CTO</p>
+              </div>
+              <ul class="social">
+                <li>
+                  <a
+                    href="https://codepen.io/collection/XdWJOQ/"
+                    class="fab fa-facebook-f"
+                    aria-hidden="true"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://codepen.io/collection/XdWJOQ/"
+                    class="fab fa-twitter"
+                    aria-hidden="true"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://codepen.io/collection/XdWJOQ/"
+                    class="fab fa-linkedin-in"
+                    aria-hidden="true"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://codepen.io/collection/XdWJOQ/"
+                    class="fab fa-google-plus-g"
+                    aria-hidden="true"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>-->
+      <!--Member 7-->
+      <div>
+        <div class="our-team">
+          <div class="picture">
+            <img class="img-fluid" src="../assets/about us images/our_team/anubahv_pandey.jpeg" style="height: 130px" />
+          </div>
+          <div class="team-content">
+            <p class="name">Anubhav Pandey</p>
+            <!-- <p class="title">Founder/CMO & COO</p> -->
+          </div>
+          <ul class="social">
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-facebook-f" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-twitter" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-linkedin-in" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-google-plus-g" aria-hidden="true"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Member 8-->
+      <!--Member 9-->
+      <div>
+        <div class="our-team">
+          <div class="picture">
+            <img class="img-fluid" src="../assets/about us images/our_team/akash_bansal.jpg" style="height: 130px" />
+          </div>
+          <div class="team-content">
+            <p class="name">Aakash Bansal</p>
+            <p class="title">IIM-D ALUMNUS</p>
+            <!-- <p class="title">CDO/Social Media head</p> -->
+          </div>
+          <ul class="social">
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-facebook-f" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-twitter" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-linkedin-in" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-google-plus-g" aria-hidden="true"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Member 3 -->
+      <div>
+        <div class="our-team">
+          <div class="picture">
+            <img class="img-fluid" src="../assets/about us images/our_team/nitin_jain.jpg" style="height: 130px" />
+          </div>
+          <div class="team-content">
+            <p class="name">Nitin Jain</p>
+            <p class="title">IIM-D ALUMNUS</p>
+            <!-- <p class="title">CDO/Social Media head</p> -->
+          </div>
+          <ul class="social">
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-facebook-f" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-twitter" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-linkedin-in" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-google-plus-g" aria-hidden="true"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="our-team">
+          <div class="picture">
+            <img class="img-fluid" src="../assets/about us images/our_team/akash_pandey.jpeg" style="height: 130px" />
+          </div>
+          <div class="team-content">
+            <p class="name">Akash Pandey</p>
+            <!-- <p class="title">Founder/CMO & COO</p> -->
+          </div>
+          <ul class="social">
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-facebook-f" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-twitter" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-linkedin-in" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-google-plus-g" aria-hidden="true"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="our-team">
+          <div class="picture">
+            <img class="img-fluid" src="../assets/about us images/our_team/rohit_kumar.jpeg" style="height: 130px" />
+          </div>
+          <div class="team-content">
+            <p class="name">Rohit Kumar</p>
+            <!-- <p class="title">Founder/CMO & COO</p> -->
+          </div>
+          <ul class="social">
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-facebook-f" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-twitter" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-linkedin-in" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-google-plus-g" aria-hidden="true"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Member 9-->
+      <!--Member 9-->
+      <!-- <div>
+        <div class="our-team">
+          <div class="picture">
+            <img class="img-fluid" src="../assets/about us images/our_team/sunaina_rastogi.jpg" />
+          </div>
+          <div class="team-content">
+            <p class="name">Sunaina Rustagi</p>
+            <p class="title">CIO/Designing head</p>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-facebook-f" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-twitter" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-linkedin-in" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-google-plus-g" aria-hidden="true"></a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+      <!--Member 10-->
+      <!-- <div>
+        <div class="our-team">
+          <div class="picture">
+            <img class="img-fluid" src="../assets/about us images/our_team/kritika_gupta.jpg" style="height: 130px" />
+          </div>
+          <div class="team-content">
+            <p class="name">Kritika Gupta</p>
+            <p class="title">Blogger/Content Head</p>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-facebook-f" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-twitter" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-linkedin-in" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/collection/XdWJOQ/" class="fab fa-google-plus-g" aria-hidden="true"></a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <!--===============================CORE TEAM Caraousel End=====================================-->
+
+  <!--=========================Footer Start===========================================-->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-menu col-4">
+          <a href="./About-us.html">About Us</a>
+          <a href="./Help-and-support.html">Contact US</a>
+        </div>
+        <div class="footer-logo col-10 col-md-4">
+          <div>
+            <img src="../assets/images/k logo (2).png" id="logo-image" height="150" width="150" />
+          </div>
+          <!-- <div
+            class="footer-icons-main d-flex justify-content-between"
+            id="footer-icons"
+          >
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div> -->
+        </div>
+
+        <div class="footer-menu col-10 col-md-4">
+          <!-- <div> -->
+          <p>PHONE: +91 8384062608</p>
+          <p>EMAIL: support@kautukum.com</p>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--=============================Copyright-footer==========================-->
+  <div class="footer-copyright d-flex justify-content-center" id="copyright-foot">
+    <p>
+      <i class="far fa-copyright"></i> Copyright 2021 Kautukum.All Rights
+      Reserved
+    </p>
+  </div>
+
+  <!-- ================================= Footer end ===========================================-->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
+    integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../assets/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="../JSfiles/about-us.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+@import "./help-and-support.css";
+@import "./about-us.css";
+@import "./blog_landing.css";
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /* background: #fff; */
+  background-color: #26201f;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(../assets/images/Yash\ gupta.jpg);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================ Navigation bar =====================*/
+.main-nav {
+  width: 100vw;
+  background-color: #000;
+}
+.navbar {
+  padding: 0.7rem;
+  height: 10vh;
+}
+
+.nav-link {
+  /* color: #000; */
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  background-color: #000;
+}
+
+.nav-link:hover {
+  color: #f9790e !important;
+}
+
+.nav-item .active {
+  color: #f9790e !important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.logo img {
+  max-height: 2.5rem;
+}
+
+/* =================== Title-section =======================*/
+
+#title-section {
+  min-width: 100vw;
+  height: 90vh;
+  background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)),
+    url("../assets/images/Yash\ gupta.jpg");
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+.left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.crs_text {
+  width: 100%;
+  text-align: center;
+  font-size: 38px;
+  color: #fff;
+}
+.crs_cont {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.crs_type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 28px;
+  width: 250px;
+  height: 150px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.right {
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  font-size: 68px;
+  color: white;
+  /* padding: 10px 5px 30px 40px; */
+  width: 150px;
+  text-align: center;
+  padding-top: 30px;
+  border-radius: 40px 0 3px 50px;
+  height: 450px !important;
+  background-color: #f9780e8c;
+  height: max-content;
+  position: fixed;
+  top: 15%;
+  right: 0;
+}
+.right > i {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#title-section .container {
+  padding-top: 6.5rem;
+}
+
+#title-section h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 68px;
+  margin-bottom: 78px !important;
+  font-family: "Poppins", sans-serif;
+}
+
+#title-section a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background-color: #e06c0c;
+  border-radius: 1rem;
+  padding: 1.6rem 1.5rem;
+  font-size: 28px;
+  transition: 0.5s;
+  font-family: "Poppins", sans-serif;
+}
+#title-section a:hover {
+  background-color: #f9790e;
+}
+
+@media (max-width: 768px) {
+  .nav-link#home-link {
+    margin-top: 50px;
+  }
+
+  #title-section {
+    height: 90vh;
+    /* margin-top: 60px; */
+  }
+  #title-section h1 {
+    font-size: 38px !important;
+    /* line-height: 36px; */
+  }
+  #title-section h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #title-section a {
+    font-size: 0.8rem;
+  }
+}
+
+/*=================== Footer ==============================*/
+
+.footer {
+  padding: 30px 0px;
+  height: max-content;
+  background-color: #f7f5ec;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  font-family: "Poppins", sans-serif;
+}
+.footer-menu div {
+  display: flex;
+  flex-direction: column;
+}
+.footer-menu a {
+  text-decoration: none;
+  color: #000;
+  /* margin-bottom: 1rem; */
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer-menu > p {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo > div {
+  /* margin-top: 40px; */
+}
+.footer-logo > div.footer-icons-main {
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+}
+.footer-copyright {
+  height: 80px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-copyright > p {
+  /* margin-top: 30px; */
+  font-size: 16px;
+  color: #ccc7c7;
+  font-weight: 300;
+}
+
+/*Responsive queries*/
+
+@media (max-width: 768px) {
+  .right {
+    width: 90px;
+    font-size: 50px;
+  }
+  #content-container .container p {
+    font-size: 17px;
+  }
+  .home-cards {
+    margin-top: 4rem;
+    margin-left: 25px;
+  }
+  .col {
+    margin-left: 50%;
+  }
+  #cards-section-2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 65px;
+  }
+
+  .footer {
+    /* height: 200px; */
+    /* padding: 2rem 0; */
+    padding: 10px 0;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .footer-logo > div.footer-icons-main {
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+  }
+
+  .footer-menu p {
+    margin-left: 0;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+  }
+  .footer-menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-menu a {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .footer-logo > div > #logo-image {
+    width: 80px;
+    height: 80px;
+  }
+  .footer-logo > div#footer-icons {
+    width: 60px;
+    font-size: 14px;
+  }
+  #copyright-foot > p {
+    font-size: 11px;
+  }
+}
+
+#courses {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 60px;
+  font-size: 78px;
+  text-decoration: none;
+}

@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*================== Category-title-section =============*/
+
+#category-title h1 {
+  font-size: 4.5rem;
+  margin-bottom: 0.6rem;
+  color: #f9790e;
+}
+
+#category-title p {
+  font-size: 1.9rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #category-title h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/*================== Category-title-section end =============*/
+/*=================== Video ==============================*/
+
+.video_section {
+  margin-top: 40px;
+  width: 100%;
+}
+.vid {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  background-color: rgb(143, 143, 143);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vid > video {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+}
+/*basic intermediate*/
+#title-section {
+  min-width: 100%;
+  height: 400px;
+  background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)),
+    url("../assets/images/Yash\ gupta.jpg");
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  border-radius:5px;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.left_type {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.crs_text {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+}
+.crs_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.crs_type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 20px;
+  min-width: 150px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.crs_type_active{
+  background-color: #f9790e;
+  color: #fff;
+} 
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  max-height: 540px;
+  overflow: auto;
+  
+  border: 1px solid #888;
+  width: max-content;
+  padding: 20px;
+  
+}
+@media (max-width: 600px) {
+  .modal-content{
+    width:90% !important;
+  }
+}
+.levelList{
+  margin:15px 30px;
+}
+.musicList{
+  margin:30px 30px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f9790e; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*================== Course container =============*/
+.name-header{
+  width: 100%;
+  margin-top: 20px;
+}
+.name-header h1{
+  font-size: 50px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+.course-container .container {
+  padding: 40px;
+  border-radius: 30px;
+
+  /*  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/images/Title-Section-Image.jpg); */
+}
+
+#member-1,
+#member-2,
+#member-3,
+#member-4 {
+  display: none;
+}
+
+.card {
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: "Montserrat", sans-serif;
+}
+
+.card img {
+  border-radius: 20px;
+  width: 100%;
+  box-shadow:none;
+}
+
+.card h4 {
+  color: #000;
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.item-1 {
+  margin-bottom: 30px;
+  box-shadow:none;
+}
+
+.item-2,
+.item-3 {
+  padding: 2rem;
+}
+.item-3{
+  padding: 70px;
+}
+.item-2 ul li {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.item-3 p{
+  font-size:24px;
+  font-weight: bold;
+}
+.item-3 ul,.item-3 p{
+  margin: 10px;
+}
+.item-3 ul li {
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style:normal;
+  margin: 26px 0;
+}
+
+.item-3 {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .course-container .container {
+    padding: 20px;
+  }
+
+  .item-2,
+  .item-3 {
+    padding: 1rem;
+    margin-bottom: 30px;
+  }
+  .card h4 {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  .item-2 ul li {
+    font-size: 0.85rem;
+  }
+
+  .item-2 p {
+    font-size: 0.85rem;
+  }
+
+  .item-3 ul li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/*===================== Carousel ========================*/
+
+.carousel {
+  width: 80%;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #f9790e;
+  font-size: 37px;
+}
+
+.our-team {
+  height: 290px;
+  width: 260px;
+  padding: 30px 0 40px;
+  margin-left: 30px;
+  background-color: #f2f2f2;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #f9790e;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #f9790e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+.team-content > .title {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: #f9790e;
+}
+.team-content > .name {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f9790e;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #f9790e;
+  background-color: #f7f5ec;
+}
+
+
+.back-container{
+  width: 90%;
+  margin: 0 5%;
+  margin-top: -280px;
+  background-color: #fff;
+  padding: 50px 2.5%;
+  margin-bottom: 1px;
+}
+@media (max-width: 1398px){
+  .back-container{
+    width: 94%;
+    margin: 0 3%;
+    margin-top: -280px;
+  }
+}
+@media (max-width: 508px){
+  .back-container{
+    width: 100%;
+    margin: 0 0;
+    margin-top: -280px;
+  }
+}
+@media (max-width: 768px) {
+  .our-team {
+    margin-right: 15%;
+    width: 170px;
+  }
+}
+@media (max-width: 600px) {
+  .our-team {
+    margin-right: 15%;
+    width: 230px;
+  }
+}
+
+/*ART*/
+.small-font {
+  font-size: 1rem;
+}
+.item-3 .small-font li {
+  margin-bottom: 3px;
+}
+img.img-fluid#liza {
+  width: 130px;
+  height: 130px;
+}
+img.img-fluid#quincy {
+  width: 130px;
+  height: 130px;
+}
+img.img-fluid#anjali {
+  width: 130px;
+  height: 130px;
+}
